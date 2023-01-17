@@ -8,9 +8,8 @@
   --secondary-color-blue: #404bbf;
   --primary-color-dark-gray: #2e2f42;
   --secondary-color-dark-gray: #434455;
-  --color-navy: navy;
-  --primary-line-height: 1.2;
-  --line-height: 1.5;
+  --color-navy: #404BBF;
+;
 
 }
 .list {
@@ -35,15 +34,15 @@ body {
 /*------Components ---------*/
 
 .heabers-commands {
-  height: 24px;
+  font-weight: 500;
   font-size: 20px;
-  line-height:var(--primary-line-height);
+  line-height:1.2;
   letter-spacing: 0.02em;
-  /*text-align: left;*/
   color: var(--primary-color-dark-gray);
 }
 .logo-web {
-  font-family: var(--secondary-font);
+  font-family: 'Raleway' sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing:0.03em;
@@ -57,21 +56,23 @@ body {
   color: var(--secondary-color-white);
 }
 .menu-link {
+  font-weight: 500;
   font-size: 16px;
-  line-height:var(--line-height);
+  line-height:1.33;
   letter-spacing: 0.02em;
   color: var(--primary-color-dark-gray);
 }
-.menu-link:hover,
-.menu-link:focus {
+.menu-link.link:hover,
+.menu-link.link:focus {
   color: var(--color-navy);
 
 }  /*---Contakt ---*/
 
 .contact-phone-number.link,
 .contact-emil.link {
+  font-weight: 400;
   font-size: 16px;
-  line-height:var(--line-height);
+  line-height:1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color-dark-gray);
 }
@@ -82,21 +83,19 @@ body {
   color: var(--color-navy);
 }
 .subtitle {
-  /*height: 72px;*/
-  width: 264px;
-  height: 72px;
+  font-weight: 400;
   font-size: 16px;
-  line-height:var(--line-height);
+  line-height:1.5;
   letter-spacing: 0.02em;
-  text-align:left;
   color: var(--secondary-color-dark-gray);
 }
 .main-text {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  /* text-align: center;*/
+  text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitali;
+  text-transform: capitalize;
 }
 /*------ / Components ---------*/
 
@@ -104,29 +103,43 @@ body {
   padding: 16px 32px;
   background: var(--primary-color-blue);
   font-size: 16px;
-  line-height:var(--line-height);
+  font-family: var(--primary-font);
+  line-height:1.5;
   letter-spacing: 0.04em;
   color: var(--primary-color-white);
   cursor: pointer;
 }
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--primary-color-white);
+  background:var(--color-navy) ;
+}
+.modal-buttob:hover,
+.modal-button:focus{
+  color: var(--color-navy);
+}
+
+.modal-btn-marketing:hover,
+.modal-btn-marketing:focus {
+  color: var(--primary-color-white);
+  background:var(--color-navy) ;
+  cursor: pointer;
+}
+
 .modal-btn-marketing {
+  font-weight: 500;
   font-size: 16px;
-  line-height:var(--line-height);
+  line-height:1.5;
   letter-spacing: 0.04em;
-  color: ;
-  background: var(--secondary-color-white);
+  color: #4D5AE5;
+  background: #F4F4FD;
+  /*color: var(--primary-color-white);
+  background:var(--color-navy) ;
+  cursor: pointer;*/
 }
-.modal-btn-marketings {
-  font-size: 16px;
-  line-height:var(--line-height);
-  background: var(--secondary-color-blue);
-}
+
 /* ------ HERO ------ */
 .hero {
-  width: 1440px;
-  height: 600px;
-  left: 0px;
-  top: 72px;
   background: var(--primary-color-dark-gray);
 }
 .hero-title {
@@ -140,23 +153,16 @@ body {
 
 .our-services {
   text-align:left;
-  /*text-align: center;*/
   color: var(--secondary-color-dark-gray);
 }
+
 .footer {
-  width: 1440px;
-  height: 310px;
-  left: 0px;
-  top: 2280px;
   background: var(--primary-color-dark-gray);
 }
 .coment {
+  font-weight: 400;
   font-size: 16px;
-  line-height:var(--line-height);
+  line-height:1.5;
   letter-spacing: 0.02em;
-  width: 264px;
-  height: 72px;
-  left: 156px;
-  top: 2418px;
   color: var(--third-color-white);
 }
