@@ -40,8 +40,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-color-dark-gray);
 }
+.appendix {
+  font-family:var( --primary-fon);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-color-dark-gray);
+}
 .logo-web {
-  font-family: 'Raleway' sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -83,14 +91,15 @@ body {
   color: var(--color-navy);
 }
 .subtitle {
-  font-weight: 400;
+  font-family: var(--primary-font);
+  /*font-weight: 400;*/
   font-size: 16px;
   line-height:1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color-dark-gray);
 }
 .main-text {
-  font-weight: 700;
+  /*font-weight: 700;*/
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -127,15 +136,16 @@ body {
 }
 
 .modal-btn-marketing {
+  font-family:var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height:1.5;
   letter-spacing: 0.04em;
-  color: #4D5AE5;
-  background: #F4F4FD;
-  /*color: var(--primary-color-white);
-  background:var(--color-navy) ;
-  cursor: pointer;*/
+  color: var(--primary-color-blue);
+  background: var(--secondary-color-white);
+ /* color: var(--primary-color-white);
+  background:var(--color-navy) ;*/
+  cursor: pointer;
 }
 
 /* ------ HERO ------ */
@@ -145,7 +155,7 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.08;
-  text-align: center;
+  /*text-align: center;*/
   letter-spacing: 0.02em;
   color: var(--primary-color-white);
 }
@@ -160,7 +170,7 @@ body {
   background: var(--primary-color-dark-gray);
 }
 .coment {
-  font-weight: 400;
+  /*font-weight: 400;*/
   font-size: 16px;
   line-height:1.5;
   letter-spacing: 0.02em;
